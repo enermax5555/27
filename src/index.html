@@ -9,7 +9,29 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
+  <style>
+    .navbar-burger {
+  display: none;
+  }
+	.navbar-menu {
+  display: block;
+	}
+  @media screen and (max-width: 600px) { 
+  .navbar-burger {
+  display: block
+  }
+  .navbar-menu {
+  display:none;
+  }
+  }
+  </style>
   <body>
+  <div class="navbar-menu"> 
+  <h1> Test for menu</h1>
+  </div>
+  <div class="navbar-burger">
+  <button type="button">Hamburger</button>
+  </div>
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
